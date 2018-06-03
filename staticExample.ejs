@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>찬집 주문</title>
+    <link rel="stylesheet" href="./css/orderPI.css">
+  </head>
+  <body>
+        <div id='bitVersion'></div>
+        <div id='bitStationName'></div>
+        <div id='bitMobileNumber'></div>
+        <img id='bitProvinceImage'></img>
+        <img id='bitWeatherImage'></img>
+        <div id='bitDateTime_Date'></div>
+        <div id='bitDateTime_Time'></div>
+        <div id='bitWeatherTitle'></div>
+        <div id='bitWeatherToday'></div>
+        <div id='bitWeatherTomorrowLow'></div>
+        <div id='bitWeatherTomorrowHigh'></div>
+        <!-- div id='bitArrivalSoon'><marquee behavior="scroll" direction="up" scrollamount="1"><h1>속초-도원3리</h1></marquee></div -->
+        <div id='bitSoonBusNumber0'></div><div id='bitSoonBusDirect0'></div>
+        <div id='bitSoonBusNumber1'></div><div id='bitSoonBusDirect1'></div>
+        <div id='bitArrivalBusNumber0'></div><div id='bitArrivalBusDirect0'></div> <div id='bitArrivalBusTime0'></div> <div id='bitArrivalBusRemain0'> </div>
+        <div id='bitArrivalBusNumber1'></div><div id='bitArrivalBusDirect1'></div> <div id='bitArrivalBusTime1'></div> <div id='bitArrivalBusRemain1'> </div>
+        <div id='bitArrivalBusNumber2'></div><div id='bitArrivalBusDirect2'></div> <div id='bitArrivalBusTime2'></div> <div id='bitArrivalBusRemain2'> </div>
+        <div id='bitArrivalBusNumber3'></div><div id='bitArrivalBusDirect3'></div> <div id='bitArrivalBusTime3'></div> <div id='bitArrivalBusRemain3'> </div>
+
+        <webview id='bitBusSchedule' ></webview>
+        <div id='bitMedia'>
+                <img id='bitMediaImage' />
+        </div>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js');
+          require('./MediaManager.js');
+    </script>
+  </body>
+</html>
